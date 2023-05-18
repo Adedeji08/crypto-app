@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import React, {useEffect, useState} from 'react'
 import DOMPurify from 'dompurify'
 import './Coin.css'
@@ -93,9 +93,10 @@ const Coin = () => {
                     }}></p>
                 </div>
             </div>
+            <Link style={{paddingLeft: '20.7%', color: 'white', textDecoration: 'none'}} to='/'>Back</Link>
         </div>
     </div>
   )
-}
+} 
 
 export default Coin
